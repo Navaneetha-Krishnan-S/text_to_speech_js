@@ -45,11 +45,23 @@ button {
   outline: none;
 }
 
-/* Default (mobile-first) styles */
-html,
-body {
-    width: 100%;
-    overflow-x: hidden;
+/* Mobile styles */
+@media only screen and (max-width: 320px) {
+  html,
+  body {
+      width: 100%;
+      overflow-x: hidden;
+  }
+  h2{
+    font-size: 40px;
+  }
+  textarea{
+    width: 75%;
+    height: 40%;
+  }
+  button{
+    font-size: 15px;
+  }
 }
 
 /* Tablet styles */
